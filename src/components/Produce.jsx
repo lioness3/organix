@@ -1,15 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Produce.css";
 
 function Produce(props) {
 
   return (
-    <div>
+    <div className='produce'>
     <h1>{props.month}</h1>
+    <ul>
     <p>{props.selection.map((selection, index) =>
       <li key={index}>{selection}</li>)}
     </p>
-    </div> 
+    </ul>
+    </div>
   );
 }
 

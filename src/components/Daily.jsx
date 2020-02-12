@@ -1,14 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Daily.css";
 
 function Daily(props) {
 
   return (
-    <div>
+
+    <div className="eachDay">
     <h1>{props.day}</h1>
     <h3>{props.hours}</h3>
     <hr/>
-    <h3>{props.location} at booth {props.booth}</h3>
+    <h3>{props.location}</h3>
+    <h4> at booth {props.booth}</h4>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Produce from './Produce';
+import './Year.css';
 
 const availableProduce = [
   {
@@ -272,12 +273,13 @@ const availableProduce = [
 
 function Year() {
   return (
-    <div>
+    <div className='content'>
     {availableProduce.map((month, index) =>
       <Produce month = {month.month}
       selection = {month.selection}
       key = {index}/>
     )}
+
     </div>
   );
 }

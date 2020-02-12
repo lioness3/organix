@@ -1,0 +1,12 @@
+.eachDay{
+  display:inline-block;
+  border:10px groove #946f30;
+  margin: 25px;
+  padding:4px;
+  text-align: center;
+  min-width: 500px;
+  height: 300px;
+background-color: #946f30;
+background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}

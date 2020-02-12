@@ -2,6 +2,7 @@ import React from "react";
 import './Schedule.css';
 import Daily from "./Daily";
 
+
 const marketSchedule = [
   {
     day: "Sunday",
@@ -44,7 +45,7 @@ const marketSchedule = [
 
 function Schedule() {
 return (
-  <div>
+  <div className="schedule">
   {marketSchedule.map((daily, index) =>
     <Daily day = {daily.day}
     hours = {daily.hours}
